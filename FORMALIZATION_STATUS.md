@@ -6,8 +6,7 @@ Pinned environment:
 - mathlib tag `v4.32.2`;
 - mathlib commit `905b95818eb32af7874a58b427f50c1711a5e96c`.
 
-The mathematical specification is included at
-`docs/THEOREM_CONTRACT.md`.
+The current numbered theorem map is in `README.md` and `Numbered/*.lean`.
 
 ## Kernel-checked coverage
 
@@ -57,15 +56,15 @@ Files: `SharpRadialClipping/ClippingMeasure.lean`, `SharpRadialClipping/Integrat
   proof does not rely on the totalized value of a nonmeasurable Bochner
   integral;
 - the Hilbert variance identity;
-- the full unconditional stochastic envelope under the theorem contract's
-  sole moment hypothesis `X ∈ L^p`.
+- the full unconditional stochastic envelope under the sole moment
+  hypothesis `X ∈ L^p`.
 
 ### Conditional envelope
 
 Files: `SharpRadialClipping/ConditionalL2.lean`, `SharpRadialClipping/ConditionalExtended.lean`
 
 - the conditional Hilbert variance identity for `Y ∈ L²`;
-- the conditional SharpRadialClipping envelope for a deterministic clipping threshold,
+- the conditional Sharp Radial Clipping envelope for a deterministic clipping threshold,
   with all integrability hypotheses discharged from `X ∈ L^p`;
 - the random `𝒢`-measurable-threshold version at the global-`L²` level,
   under explicit weighted-integrability hypotheses;
@@ -79,7 +78,7 @@ Files: `SharpRadialClipping/ConditionalL2.lean`, `SharpRadialClipping/Conditiona
 - measurable threshold bands
   `1 / (n + 1) ≤ τ ≤ n + 1`, their a.e. covering property when `τ > 0`
   a.e., and automatic local `L²` and weighted integrability on every band;
-- the fully localized random-threshold conditional SharpRadialClipping theorem from exactly
+- the fully localized random-threshold conditional Sharp Radial Clipping theorem from exactly
   `X ∈ L^p`, `1 < p ≤ 2`, deterministic nonnegative weights, and a positive
   strongly `𝒢`-measurable threshold, without any global `L²` or weighted
   integrability assumptions;
@@ -320,10 +319,10 @@ random vector.
 - the integrated conditional module and root module were rebuilt independently
   after integration;
 - a separate final read-only audit matched both full conditional theorem
-  signatures against the authoritative contract, checked the localization
+  signatures against the then-current specification, checked the localization
   chain for circularity and safe use of totalized conditional expectation,
   and independently repeated the build and axiom inspection;
-- an independent line-by-line theorem-contract audit found no circular
+- an independent line-by-line theorem-specification audit found no circular
   dependence in the unconditional deterministic or stochastic proof chain;
 - inspected axioms of the scalar limit theorems, exact stochastic supremum,
   strict nonattainment, support geometry, global-`L²` conditional theorem,

@@ -13,5 +13,7 @@ set_option linter.defProp false
 def article_4_1_exact_set := @articleAttainablePairs_eq_closedHullRegion_diff_explicitCurvedUpperArc
 def article_4_1_convex_hull := @closedConvexHull_articleAttainablePairs_eq_signedSupportRegion
 
+#check article_4_1_exact_set
+#check article_4_1_convex_hull
 #print axioms article_4_1_exact_set
 #print axioms article_4_1_convex_hull

@@ -11,4 +11,5 @@ set_option linter.defProp false
 
 def article_5_2_trading := @trading_regret_bound
 
+#check article_5_2_trading
 #print axioms article_5_2_trading

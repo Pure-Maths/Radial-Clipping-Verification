@@ -11,4 +11,5 @@ set_option linter.defProp false
 
 def article_4_5_all_thresholds := @exists_all_thresholds_three_dimensional_realization
 
+#check article_4_5_all_thresholds
 #print axioms article_4_5_all_thresholds

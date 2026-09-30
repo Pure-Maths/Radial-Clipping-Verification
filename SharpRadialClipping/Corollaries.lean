@@ -32,7 +32,7 @@ lemma kappa_p_eq_piecewise {p lam : ℝ} (hlam : 0 ≤ lam) (hp : 1 < p) :
 
 variable {E : Type*} [NormedAddCommGroup E] [NormedSpace ℝ E]
 
-/-- One-parameter form of the deterministic SharpRadialClipping envelope. -/
+/-- One-parameter form of the deterministic Sharp Radial Clipping envelope. -/
 theorem radialClip_envelope_one_parameter
     {p lam τ : ℝ} (hlam : 0 ≤ lam) (hp : 1 < p) (hp2 : p ≤ 2)
     (hτ : 0 < τ) (x : E) :

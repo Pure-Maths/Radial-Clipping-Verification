@@ -2,7 +2,7 @@ import SharpRadialClipping.ConditionalL2
 import Mathlib.MeasureTheory.Function.ConditionalExpectation.LebesgueBochner
 
 /-!
-# The full conditional SharpRadialClipping envelope without a global `L²` assumption
+# The full conditional Sharp Radial Clipping envelope without a global `L²` assumption
 
 The Bochner conditional expectation in mathlib is totalized to zero on
 non-integrable functions.  Consequently the conditional variance in the full
@@ -662,7 +662,7 @@ theorem conditional_radialClip_envelope_on_thresholdBand
       (μ.restrict A) hm hα hβ hp hp2 τ hτposA X hLpA
       hβscaleA hKscaleA hY2A hweightedYA hweightedXA
 
-/-- Full random-threshold conditional SharpRadialClipping contract, with the potentially
+/-- Full random-threshold conditional Sharp Radial Clipping contract, with the potentially
 non-globally-integrable conditional variance represented canonically by
 `condLExp` and converted back to `ℝ` after proving a.e. finiteness. -/
 theorem conditional_radialClip_envelope_variable_full

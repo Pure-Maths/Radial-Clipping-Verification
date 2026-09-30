@@ -2,11 +2,12 @@ import SharpRadialClipping.AllThresholdsAssembly
 import SharpRadialClipping.AllThresholdsFiniteAssembly
 
 /-!
-# Reducing the unrestricted all-threshold theorem to finite radial laws
+# All-threshold three-dimensional realization
 
 The analytic limit passage is already proved in `AllThresholdsAssembly`.
-This module connects it to a finite-radius realization theorem.  The latter
-is an explicit hypothesis here until its geometric proof is assembled.
+This module first states the reduction to finite-radius laws, then discharges
+that intermediate hypothesis using `AllThresholdsFiniteAssembly` and proves
+the unrestricted theorem below.
 -/
 
 open MeasureTheory

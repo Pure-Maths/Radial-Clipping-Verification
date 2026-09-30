@@ -121,7 +121,7 @@ theorem condExp_hilbert_variance_identity
       rw [htwoω, real_inner_self_eq_norm_sq]
       ring
 
-/-- Conditional SharpRadialClipping envelope for a deterministic clipping radius.  This is
+/-- Conditional Sharp Radial Clipping envelope for a deterministic clipping radius.  This is
 the global-`L²` core of the fully localized random-threshold theorem. -/
 theorem conditional_radialClip_envelope_const
     {m mΩ : MeasurableSpace Ω} (μ : Measure[mΩ] Ω)
@@ -240,7 +240,7 @@ theorem conditional_radialClip_envelope_const
     _ = K_p α β p * τ ^ (1 - p) *
           μ[(fun z => ‖X z‖ ^ p) | m] ω := by rfl
 
-/-- Conditional SharpRadialClipping envelope with a random `𝒢`-measurable threshold at the
+/-- Conditional Sharp Radial Clipping envelope with a random `𝒢`-measurable threshold at the
 global-`L²` level.  The two weighted integrability assumptions are exactly
 what the later localization argument must discharge. -/
 theorem conditional_radialClip_envelope_variable_L2

@@ -12,5 +12,7 @@ set_option linter.defProp false
 def article_3_1_gt_one := @stochastic_radialClip_envelope_of_memLp
 def article_3_1_p_one := @stochastic_radialClip_envelope_p1
 
+#check article_3_1_gt_one
+#check article_3_1_p_one
 #print axioms article_3_1_gt_one
 #print axioms article_3_1_p_one

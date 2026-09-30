@@ -41,7 +41,7 @@ import SharpRadialClipping.ApplicationTrading
 import SharpRadialClipping.ApplicationRandomSum
 
 /-!
-# SharpRadialClipping formalization
+# Sharp Radial Clipping formalization
 
 Root module for the machine-checked formalization.
 -/

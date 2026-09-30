@@ -1,14 +1,17 @@
 # Sharp Radial Clipping
 
-Lean 4/mathlib verification of the numbered mathematical results 2.1–5.2 in
-the radial-clipping article. The repository includes the complete proof sources,
-not just references to files on the author's computer.
+Lean 4/mathlib verification of numbered results 2.1–5.2 in Danila Litvinov's
+manuscript *A Sharp Joint Bias–Energy Envelope for Radial Clipping*
+(*Точная совместная огибающая смещения и энергии радиального клиппинга*).
+The repository includes the complete proof sources, not just references to
+files on the author's computer. The manuscript itself is not included here.
 
 ## Find a result
 
 Each file in [`Numbered`](Numbered) corresponds to one numbered statement.
-It provides a kernel-checked alias of the proved declaration and prints its
-axiom dependencies. The detailed proof steps and shared lemmas are in [`SharpRadialClipping`](SharpRadialClipping).
+It prints the formal statement (`#check`) and axiom dependencies (`#print axioms`)
+of a kernel-checked alias of the proved declaration. The detailed proof steps
+and shared lemmas are in [`SharpRadialClipping`](SharpRadialClipping).
 
 | Article result | Topic | Numbered file | Main proof source |
 | --- | --- | --- | --- |
@@ -28,6 +31,11 @@ axiom dependencies. The detailed proof steps and shared lemmas are in [`SharpRad
 Some results require more than one source module because the endpoint `p = 1`
 is proved separately, or because substantial common lemmas are shared. The
 numbered files are entry points, **not independent one-file reproofs**.
+For Proposition 3.2 with `1 < p ≤ 2`, the bound for every admissible law and
+the matching supremum already on centered two-point laws together prove the
+claimed global sharp constant; both facts are exposed in `Numbered/3.2.lean`.
+For Corollary 5.2, Lean numbers periods from `0` to `T-1`, whereas the article
+uses `1` to `T`; this is only an index shift.
 
 ## Verify
 
@@ -35,15 +43,19 @@ The versions of Lean and mathlib are pinned by `lean-toolchain` and
 `lake-manifest.json`. With Lean/Elan and Lake installed, from this directory:
 
 ```sh
-lake update
 lake build SharpRadialClipping
 for proof_file in Numbered/*.lean; do
   lake env lean "$proof_file" || exit 1
 done
 ```
 
+Run a numbered file to see its exact Lean statement and axiom report; follow
+its import and the `Full proof` comment to inspect the proof. Do not run a bare
+`lake update` for verification: that command may upgrade pinned dependencies.
+
 The build and all numbered files passed locally on 2026-09-30. Their axiom
 reports contained only `propext`, `Classical.choice`, and `Quot.sound`; no
 `sorry`, `admit`, or additional axioms are used. For scope and assumptions,
-see [`FORMALIZATION_STATUS.md`](FORMALIZATION_STATUS.md) and the included
-[`THEOREM_CONTRACT.md`](docs/THEOREM_CONTRACT.md).
+see [`FORMALIZATION_STATUS.md`](FORMALIZATION_STATUS.md). To compare these
+formal statements with the article's wording, use the manuscript named above;
+an authoritative public manuscript link has not yet been added.

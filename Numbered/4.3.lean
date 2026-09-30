@@ -12,5 +12,7 @@ set_option linter.defProp false
 def article_4_3_gt_one := @articleSignedValues_isLUB
 def article_4_3_p_one := @signedAttainableValuesP1_isLUB
 
+#check article_4_3_gt_one
+#check article_4_3_p_one
 #print axioms article_4_3_gt_one
 #print axioms article_4_3_p_one

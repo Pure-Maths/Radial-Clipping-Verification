@@ -11,5 +11,7 @@ set_option linter.defProp false
 def article_4_4_realization := @articleAttainablePairs_realTwoAtom_realization
 def article_4_4_p_one := @p1_articleAttainablePairs_subset_realTwoAtomPairs
 
+#check article_4_4_realization
+#check article_4_4_p_one
 #print axioms article_4_4_realization
 #print axioms article_4_4_p_one

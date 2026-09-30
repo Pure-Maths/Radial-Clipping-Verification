@@ -11,5 +11,7 @@ set_option linter.defProp false
 def article_2_2_inequality := @radialClip_envelope_p1_article
 def article_2_2_optimality := @K_p_one_smallest_vector_constant
 
+#check article_2_2_inequality
+#check article_2_2_optimality
 #print axioms article_2_2_inequality
 #print axioms article_2_2_optimality
