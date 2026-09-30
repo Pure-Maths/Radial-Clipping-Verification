@@ -304,49 +304,18 @@ random vector.
 
 ## Current audit state
 
-- root `lake build SharpRadialClipping`: passing (`3609` jobs, rechecked 2026-09-30);
-- occurrences of `sorry` or `admit`: zero;
-- user-declared axioms: zero;
-- scalar core independently reconstructed and compiled by a separate audit
-  agent;
-- the measure-theoretic rare-law construction independently reconstructed and
-  compiled by a separate audit agent;
-- the arbitrary-space nonattainment theorem independently developed, compiled
-  twice in isolation, integrated, and rebuilt as part of the root module;
-- the localization lemmas, the extended conditional variance inequality, and
-  the final full conditional theorem were independently developed in separate
-  audit files before integration;
-- the integrated conditional module and root module were rebuilt independently
-  after integration;
-- a separate final read-only audit matched both full conditional theorem
-  signatures against the then-current specification, checked the localization
-  chain for circularity and safe use of totalized conditional expectation,
-  and independently repeated the build and axiom inspection;
-- an independent line-by-line theorem-specification audit found no circular
-  dependence in the unconditional deterministic or stochastic proof chain;
-- inspected axioms of the scalar limit theorems, exact stochastic supremum,
-  strict nonattainment, support geometry, global-`L²` conditional theorem,
-  attainable-set closure theorem, extended variance theorem, and both full
-  localized conditional theorems are only the standard mathlib foundations
-  `propext`, `Classical.choice`, and `Quot.sound`.
-- supplemental audit on 2026-09-29: the new exact `p = 1` attainable-set
-  classification and both signed-support `IsLUB` theorems also depend only on
-  `propext`, `Classical.choice`, and `Quot.sound`; their modules build without
-  `sorry` or `admit`.
-- axiom audit on 2026-09-29: the final Theorem 2.2 smallest-constant statement,
-  the geometric Theorem 4.1 set-difference statement, and the exact
-  closed-hull/support-intersection theorem depend only on `propext`,
-  `Classical.choice`, and `Quot.sound`.
-- the final explicit `F_p` version of Theorem 4.1 and the `p = 1` stochastic
-  supremum (Proposition 3.2) have the same axiom profile.
-- `#print axioms exists_all_thresholds_three_dimensional_realization` reports
-  only `propext`, `Classical.choice`, and `Quot.sound`; the completed Theorem 4.5
-  modules contain no `sorry`, `admit`, or new axioms.
-- the Corollary 5.2 theorem `trading_regret_bound` and the full
-  Corollary 5.1 theorem `reinsuranceRiskCost_le_of_iid` also report only
-  these three standard axioms.
-- the bounded-count mean and off-diagonal-moment theorems in
-  `ApplicationRandomSum.lean` have the same axiom profile.
+On 2026-09-30, an anonymous clone of the public repository built from a clean
+checkout with `lake build SharpRadialClipping` (3609 jobs). All 12 numbered
+files passed `lake env lean`. Each file prints its theorem type and the axiom
+dependencies of its article-facing aliases. These reports contained only
+`propext`, `Classical.choice`, and `Quot.sound`.
+
+The commands in `README.md` reproduce the build and numbered-file checks. To
+inspect a particular proof, start with its numbered file, follow its import to
+the source theorem, and inspect any further imports used there. A successful
+build is a kernel check of the formal statements; matching those statements
+to the exact wording and numbering of the manuscript requires the manuscript
+itself, which is not distributed in this repository.
 
 ## Scope boundary
 
