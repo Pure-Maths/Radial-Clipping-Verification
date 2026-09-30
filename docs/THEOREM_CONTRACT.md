@@ -1,9 +1,9 @@
-# H099 theorem contract
+# SharpRadialClipping theorem contract
 
 Version: `1.0.4`
 Date: 2026-08-14
 
-This document fixes the exact mathematical claims of the public H099 research
+This document fixes the exact mathematical claims of the public SharpRadialClipping research
 note. It is authoritative over informal summaries.
 
 ## 1. Radial clipping
@@ -228,7 +228,7 @@ For \(p=2\),
 - \((\alpha,\beta)=(1,0)\) is the sharp residual envelope used as a local
   ingredient in H100.
 - \((\alpha,\beta)=(0,1)\) is the clipped-energy endpoint used in H105.
-  H101 uses the center-aware extension developed in H100 rather than H099
+  H101 uses the center-aware extension developed in H100 rather than SharpRadialClipping
   directly.
 - \((\alpha,\beta)=(1,1)\) gives
 
@@ -240,7 +240,7 @@ For \(p=2\),
   After a separate portfolio-specific signed comparison, this supplies the
   radial core of the strengthened H105 one-round charge.
 
-H099 does not imply the global theorems of H100, H101, or H105.
+SharpRadialClipping does not imply the global theorems of H100, H101, or H105.
 
 ## 7. Scope boundaries
 

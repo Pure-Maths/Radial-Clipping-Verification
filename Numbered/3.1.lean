@@ -1,9 +1,9 @@
-import H099.Stochastic
-import H099.StochasticConditionalP1
+import SharpRadialClipping.Stochastic
+import SharpRadialClipping.StochasticConditionalP1
 
 /-!
 Article Theorem 3.1: the stochastic clipping envelope for `1 ≤ p ≤ 2`.
-Full proofs: `H099/Stochastic.lean` and `H099/StochasticConditionalP1.lean`.
+Full proofs: `SharpRadialClipping/Stochastic.lean` and `SharpRadialClipping/StochasticConditionalP1.lean`.
 -/
 
 noncomputable section

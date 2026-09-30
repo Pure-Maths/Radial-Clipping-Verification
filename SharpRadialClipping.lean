@@ -1,0 +1,47 @@
+import SharpRadialClipping.Scalar
+import SharpRadialClipping.Deterministic
+import SharpRadialClipping.ClippingMeasure
+import SharpRadialClipping.Integration
+import SharpRadialClipping.Stochastic
+import SharpRadialClipping.ConditionalL2
+import SharpRadialClipping.ConditionalExtended
+import SharpRadialClipping.Sharpness
+import SharpRadialClipping.Corollaries
+import SharpRadialClipping.Geometry
+import SharpRadialClipping.Attainable
+import SharpRadialClipping.RandomLaw
+import SharpRadialClipping.AttainableP1
+import SharpRadialClipping.SignedSupport
+import SharpRadialClipping.SignedSupportP1
+import SharpRadialClipping.AttainableExact
+import SharpRadialClipping.DeterministicP1
+import SharpRadialClipping.StochasticConditionalP1
+import SharpRadialClipping.StochasticSharpP1
+import SharpRadialClipping.RareBoundaryInverse
+import SharpRadialClipping.AttainableClassification
+import SharpRadialClipping.ConvexHullExact
+import SharpRadialClipping.PointwiseArc
+import SharpRadialClipping.Article41
+import SharpRadialClipping.TwoAtom
+import SharpRadialClipping.AllThresholdsLimit
+import SharpRadialClipping.AllThresholdsGeometry
+import SharpRadialClipping.AllThresholdsFold
+import SharpRadialClipping.AllThresholdsQuantization
+import SharpRadialClipping.AllThresholdsLongitudinal
+import SharpRadialClipping.AllThresholdsAssembly
+import SharpRadialClipping.AllThresholdsFiniteShell
+import SharpRadialClipping.AllThresholdsPushforward
+import SharpRadialClipping.AllThresholdsFinitePath
+import SharpRadialClipping.AllThresholdsFiniteLaw
+import SharpRadialClipping.AllThresholdsHinge
+import SharpRadialClipping.AllThresholdsFinalPrep
+import SharpRadialClipping.ApplicationReinsurance
+import SharpRadialClipping.ApplicationReinsuranceFull
+import SharpRadialClipping.ApplicationTrading
+import SharpRadialClipping.ApplicationRandomSum
+
+/-!
+# SharpRadialClipping formalization
+
+Root module for the machine-checked formalization.
+-/

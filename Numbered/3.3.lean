@@ -1,10 +1,10 @@
-import H099.ConditionalExtended
-import H099.StochasticConditionalP1
+import SharpRadialClipping.ConditionalExtended
+import SharpRadialClipping.StochasticConditionalP1
 
 /-!
 Article Corollary 3.3: conditional envelope, including random measurable thresholds.
-Full proofs: `H099/ConditionalExtended.lean` and
-`H099/StochasticConditionalP1.lean`.
+Full proofs: `SharpRadialClipping/ConditionalExtended.lean` and
+`SharpRadialClipping/StochasticConditionalP1.lean`.
 -/
 
 noncomputable section

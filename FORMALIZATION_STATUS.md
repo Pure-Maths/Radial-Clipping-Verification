@@ -13,7 +13,7 @@ The mathematical specification is included at
 
 ### Scalar contract
 
-File: `H099/Scalar.lean`
+File: `SharpRadialClipping/Scalar.lean`
 
 - definition of `c_p`, `F`, `K_p`, and `r_star`;
 - exact bound `F_le_K_p`;
@@ -34,7 +34,7 @@ File: `H099/Scalar.lean`
 
 ### Deterministic contract
 
-Files: `H099/Deterministic.lean`, `H099/DeterministicP1.lean`
+Files: `SharpRadialClipping/Deterministic.lean`, `SharpRadialClipping/DeterministicP1.lean`
 
 - radial clipping on arbitrary real normed spaces;
 - exact formulas for the clipped norm and residual norm;
@@ -47,8 +47,8 @@ Files: `H099/Deterministic.lean`, `H099/DeterministicP1.lean`
 
 ### Measure-theoretic and stochastic upper bounds
 
-Files: `H099/ClippingMeasure.lean`, `H099/Integration.lean`,
-`H099/Stochastic.lean`
+Files: `SharpRadialClipping/ClippingMeasure.lean`, `SharpRadialClipping/Integration.lean`,
+`SharpRadialClipping/Stochastic.lean`
 
 - continuity and a.e. strong measurability of radial clipping;
 - integrability of the clipped vector and its squared norm on finite measure
@@ -62,10 +62,10 @@ Files: `H099/ClippingMeasure.lean`, `H099/Integration.lean`,
 
 ### Conditional envelope
 
-Files: `H099/ConditionalL2.lean`, `H099/ConditionalExtended.lean`
+Files: `SharpRadialClipping/ConditionalL2.lean`, `SharpRadialClipping/ConditionalExtended.lean`
 
 - the conditional Hilbert variance identity for `Y ∈ L²`;
-- the conditional H099 envelope for a deterministic clipping threshold,
+- the conditional SharpRadialClipping envelope for a deterministic clipping threshold,
   with all integrability hypotheses discharged from `X ∈ L^p`;
 - the random `𝒢`-measurable-threshold version at the global-`L²` level,
   under explicit weighted-integrability hypotheses;
@@ -79,7 +79,7 @@ Files: `H099/ConditionalL2.lean`, `H099/ConditionalExtended.lean`
 - measurable threshold bands
   `1 / (n + 1) ≤ τ ≤ n + 1`, their a.e. covering property when `τ > 0`
   a.e., and automatic local `L²` and weighted integrability on every band;
-- the fully localized random-threshold conditional H099 theorem from exactly
+- the fully localized random-threshold conditional SharpRadialClipping theorem from exactly
   `X ∈ L^p`, `1 < p ≤ 2`, deterministic nonnegative weights, and a positive
   strongly `𝒢`-measurable threshold, without any global `L²` or weighted
   integrability assumptions;
@@ -89,7 +89,7 @@ Files: `H099/ConditionalL2.lean`, `H099/ConditionalExtended.lean`
 
 ### Sharpness and one-parameter corollaries
 
-Files: `H099/Sharpness.lean`, `H099/Corollaries.lean`
+Files: `SharpRadialClipping/Sharpness.lean`, `SharpRadialClipping/Corollaries.lean`
 
 - exact centered symmetric two-point attainment in the first regime;
 - exact formulas for the actual centered rare Bernoulli construction in the
@@ -112,7 +112,7 @@ Files: `H099/Sharpness.lean`, `H099/Corollaries.lean`
 
 ### Support-function radius geometry
 
-File: `H099/Geometry.lean`
+File: `SharpRadialClipping/Geometry.lean`
 
 - every nonzero nonnegative support direction has a maximizing radius in
   `[1, p / (p - 1)]`;
@@ -128,7 +128,7 @@ File: `H099/Geometry.lean`
 
 ### Closure of the attainable set
 
-File: `H099/Attainable.lean`
+File: `SharpRadialClipping/Attainable.lean`
 
 - every finite rare-law pair is realized by an actual centered two-point law
   on `Bool`;
@@ -139,7 +139,7 @@ File: `H099/Attainable.lean`
 
 ### Intermediate exact `1 < p ≤ 2` attainable-set lemmas
 
-Files: `H099/AttainableExact.lean`, `H099/Sharpness.lean`
+Files: `SharpRadialClipping/AttainableExact.lean`, `SharpRadialClipping/Sharpness.lean`
 
 - the one-nonzero-atom Bernoulli law has its exact normalized pair for every
   real exponent `p > 1`;
@@ -153,8 +153,8 @@ Files: `H099/AttainableExact.lean`, `H099/Sharpness.lean`
 
 ### Exact `p = 1` attainable set and signed support
 
-Files: `H099/RandomLaw.lean`, `H099/AttainableP1.lean`,
-`H099/SignedSupportP1.lean`
+Files: `SharpRadialClipping/RandomLaw.lean`, `SharpRadialClipping/AttainableP1.lean`,
+`SharpRadialClipping/SignedSupportP1.lean`
 
 - a universe-polymorphic interface for arbitrary probability laws with a
   finite positive norm moment;
@@ -167,7 +167,7 @@ Files: `H099/RandomLaw.lean`, `H099/AttainableP1.lean`,
 
 ### Signed support for `1 < p ≤ 2`
 
-File: `H099/SignedSupport.lean`
+File: `SharpRadialClipping/SignedSupport.lean`
 
 - the four-branch signed support formula over the full set of admissible
   Hilbert-valued laws, not merely over the limiting rare-shock curve;
@@ -178,9 +178,9 @@ File: `H099/SignedSupport.lean`
 
 ### Article Theorem 4.1 and related results
 
-Files: `H099/RareBoundaryInverse.lean`, `H099/AttainableClassification.lean`,
-`H099/ConvexHullExact.lean`, `H099/Article41.lean`, `H099/PointwiseArc.lean`,
-`H099/TwoAtom.lean`
+Files: `SharpRadialClipping/RareBoundaryInverse.lean`, `SharpRadialClipping/AttainableClassification.lean`,
+`SharpRadialClipping/ConvexHullExact.lean`, `SharpRadialClipping/Article41.lean`, `SharpRadialClipping/PointwiseArc.lean`,
+`SharpRadialClipping/TwoAtom.lean`
 
 - the exact attainable set for arbitrary nontrivial real Hilbert spaces and
   every `1 < p ≤ 2`, first in radius-parametric form;
@@ -199,8 +199,8 @@ Files: `H099/RareBoundaryInverse.lean`, `H099/AttainableClassification.lean`,
 
 ### The `p = 1` stochastic and conditional envelope
 
-Files: `H099/StochasticConditionalP1.lean`,
-`H099/StochasticSharpP1.lean`
+Files: `SharpRadialClipping/StochasticConditionalP1.lean`,
+`SharpRadialClipping/StochasticSharpP1.lean`
 
 - Theorem 3.1 at `p = 1`;
 - Proposition 3.2 at `p = 1`: the supremum over actual nonzero stochastic
@@ -209,14 +209,14 @@ Files: `H099/StochasticConditionalP1.lean`,
 
 ### Theorem 4.5: simultaneous three-dimensional realization
 
-Files: `H099/AllThresholds.lean`, `H099/AllThresholdsGeometry.lean`,
-`H099/AllThresholdsFold.lean`, `H099/AllThresholdsLongitudinal.lean`,
-`H099/AllThresholdsQuantization.lean`, `H099/AllThresholdsApprox.lean`,
-`H099/AllThresholdsLimit.lean`, `H099/AllThresholdsAssembly.lean`,
-`H099/AllThresholdsFiniteShell.lean`, `H099/AllThresholdsFinitePath.lean`,
-`H099/AllThresholdsPushforward.lean`, `H099/AllThresholdsFiniteLaw.lean`,
-`H099/AllThresholdsHinge.lean`, `H099/AllThresholdsFiniteAssembly.lean`,
-`H099/AllThresholdsFinalPrep.lean`
+Files: `SharpRadialClipping/AllThresholds.lean`, `SharpRadialClipping/AllThresholdsGeometry.lean`,
+`SharpRadialClipping/AllThresholdsFold.lean`, `SharpRadialClipping/AllThresholdsLongitudinal.lean`,
+`SharpRadialClipping/AllThresholdsQuantization.lean`, `SharpRadialClipping/AllThresholdsApprox.lean`,
+`SharpRadialClipping/AllThresholdsLimit.lean`, `SharpRadialClipping/AllThresholdsAssembly.lean`,
+`SharpRadialClipping/AllThresholdsFiniteShell.lean`, `SharpRadialClipping/AllThresholdsFinitePath.lean`,
+`SharpRadialClipping/AllThresholdsPushforward.lean`, `SharpRadialClipping/AllThresholdsFiniteLaw.lean`,
+`SharpRadialClipping/AllThresholdsHinge.lean`, `SharpRadialClipping/AllThresholdsFiniteAssembly.lean`,
+`SharpRadialClipping/AllThresholdsFinalPrep.lean`
 
 - radial-shell residual identities and interpolation of distances along a
   segment;
@@ -287,17 +287,17 @@ random vector.
 
 ### Section 5 applications
 
-- `H099/ApplicationTradingHelpers.lean` and `H099/ApplicationTrading.lean`
+- `SharpRadialClipping/ApplicationTradingHelpers.lean` and `SharpRadialClipping/ApplicationTrading.lean`
   prove the complete Corollary 5.2 trading regret inequality for arbitrary
   positive returns and every constant comparison weight in `[0,1]`. The proof
   includes positive wealth, the logarithmic tangent inequality, projection
   contraction, the deterministic `K_2` envelope, and the telescoping sum.
-- `H099/ApplicationReinsuranceFull.lean` proves the complete Corollary 5.1
+- `SharpRadialClipping/ApplicationReinsuranceFull.lean` proves the complete Corollary 5.1
   `reinsuranceRiskCost_le_of_iid` from an integer-valued count with finite
   second moment, nonnegative IID `L²` losses, and independence of the count
   from the entire loss sequence. The final `K_2` cost bound is no longer
   conditional on separately assumed random-sum identities.
-- `H099/ApplicationRandomSum.lean`, `ApplicationRandomSumVariance.lean`,
+- `SharpRadialClipping/ApplicationRandomSum.lean`, `ApplicationRandomSumVariance.lean`,
   `ApplicationRandomSumLimit.lean`, and `ApplicationRandomSumFull.lean` derive
   the random-sum mean and variance identities, first for bounded counts and
   then for unbounded counts by dominated convergence. The IID and clipping
@@ -305,7 +305,7 @@ random vector.
 
 ## Current audit state
 
-- root `lake build H099`: passing (`3609` jobs, rechecked 2026-09-30);
+- root `lake build SharpRadialClipping`: passing (`3609` jobs, rechecked 2026-09-30);
 - occurrences of `sorry` or `admit`: zero;
 - user-declared axioms: zero;
 - scalar core independently reconstructed and compiled by a separate audit
@@ -353,10 +353,10 @@ random vector.
 
 - Theorem 4.1, including the flat/curved junction and equivalence with the
   closed-convex-hull description, is kernel-checked. The separate `p = 1`
-  region is fully classified in `H099/AttainableP1.lean`.
+  region is fully classified in `SharpRadialClipping/AttainableP1.lean`.
 - Theorem 4.5, the simultaneous three-dimensional construction for every
   clipping threshold, is kernel-checked in
-  `H099/AllThresholdsFinalPrep.lean`.
+  `SharpRadialClipping/AllThresholdsFinalPrep.lean`.
 - Corollaries 5.1 and 5.2 are fully kernel-checked under their stated model
   assumptions.
 - The Whitehouse, anchored-minibatch, FTRL, and gross-exposure applications

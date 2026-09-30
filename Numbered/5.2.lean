@@ -1,9 +1,9 @@
-import H099.ApplicationTrading
+import SharpRadialClipping.ApplicationTrading
 
 /-!
 Article Corollary 5.2: trading regret against every constant portfolio weight.
-Full proof: `H099/ApplicationTrading.lean`; auxiliary arguments:
-`H099/ApplicationTradingHelpers.lean`.
+Full proof: `SharpRadialClipping/ApplicationTrading.lean`; auxiliary arguments:
+`SharpRadialClipping/ApplicationTradingHelpers.lean`.
 -/
 
 noncomputable section

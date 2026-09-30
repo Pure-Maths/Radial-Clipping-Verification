@@ -1,8 +1,8 @@
-import H099.DeterministicP1
+import SharpRadialClipping.DeterministicP1
 
 /-!
 Article Theorem 2.2: the optimal deterministic constant at `p = 1`.
-Full proof: `H099/DeterministicP1.lean`.
+Full proof: `SharpRadialClipping/DeterministicP1.lean`.
 -/
 
 noncomputable section

@@ -1,9 +1,9 @@
-import H099.Sharpness
-import H099.StochasticSharpP1
+import SharpRadialClipping.Sharpness
+import SharpRadialClipping.StochasticSharpP1
 
 /-!
 Article Proposition 3.2: sharpness of the stochastic constant.
-Full proofs: `H099/Sharpness.lean` and `H099/StochasticSharpP1.lean`.
+Full proofs: `SharpRadialClipping/Sharpness.lean` and `SharpRadialClipping/StochasticSharpP1.lean`.
 -/
 
 noncomputable section

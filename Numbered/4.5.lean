@@ -1,9 +1,9 @@
-import H099.AllThresholdsFinalPrep
+import SharpRadialClipping.AllThresholdsFinalPrep
 
 /-!
 Article Theorem 4.5: one law in `ℝ³` realizes all clipping thresholds.
-Full proof: `H099/AllThresholdsFinalPrep.lean` and the imported
-`H099/AllThresholds*.lean` modules.
+Full proof: `SharpRadialClipping/AllThresholdsFinalPrep.lean` and the imported
+`SharpRadialClipping/AllThresholds*.lean` modules.
 -/
 
 noncomputable section

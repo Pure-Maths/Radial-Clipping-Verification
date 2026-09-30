@@ -1,9 +1,9 @@
-import H099.Article41
-import H099.ConvexHullExact
+import SharpRadialClipping.Article41
+import SharpRadialClipping.ConvexHullExact
 
 /-!
 Article Theorem 4.1: exact attainable set and explicit excluded arc.
-Full proofs: `H099/Article41.lean`, `H099/ConvexHullExact.lean`, and
+Full proofs: `SharpRadialClipping/Article41.lean`, `SharpRadialClipping/ConvexHullExact.lean`, and
 their imported geometry and attainable-set modules.
 -/
 

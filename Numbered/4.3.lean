@@ -1,9 +1,9 @@
-import H099.SignedSupport
-import H099.SignedSupportP1
+import SharpRadialClipping.SignedSupport
+import SharpRadialClipping.SignedSupportP1
 
 /-!
 Article Corollary 4.3: the full signed support function.
-Full proofs: `H099/SignedSupport.lean` and `H099/SignedSupportP1.lean`.
+Full proofs: `SharpRadialClipping/SignedSupport.lean` and `SharpRadialClipping/SignedSupportP1.lean`.
 -/
 
 noncomputable section

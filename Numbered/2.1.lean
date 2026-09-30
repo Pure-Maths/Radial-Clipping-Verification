@@ -1,8 +1,8 @@
-import H099.Deterministic
+import SharpRadialClipping.Deterministic
 
 /-!
 Article Theorem 2.1: exact deterministic joint envelope.
-Full proof: `H099/Deterministic.lean`; scalar optimization: `H099/Scalar.lean`.
+Full proof: `SharpRadialClipping/Deterministic.lean`; scalar optimization: `SharpRadialClipping/Scalar.lean`.
 The two declarations below expose the proved inequality and optimality under
 the article number without changing their statements.
 -/

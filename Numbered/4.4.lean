@@ -1,8 +1,8 @@
-import H099.TwoAtom
+import SharpRadialClipping.TwoAtom
 
 /-!
 Article Corollary 4.4: one-dimensional two-atom realization.
-Full proof: `H099/TwoAtom.lean`.
+Full proof: `SharpRadialClipping/TwoAtom.lean`.
 -/
 
 noncomputable section

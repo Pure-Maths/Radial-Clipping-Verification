@@ -1,8 +1,8 @@
-import H099.PointwiseArc
+import SharpRadialClipping.PointwiseArc
 
 /-!
 Article Lemma 4.2: the pointwise arc inequality and its equality cases.
-Full proof: `H099/PointwiseArc.lean`.
+Full proof: `SharpRadialClipping/PointwiseArc.lean`.
 -/
 
 noncomputable section
