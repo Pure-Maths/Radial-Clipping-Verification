@@ -21,7 +21,7 @@ and shared lemmas are in [`SharpRadialClipping`](SharpRadialClipping).
 | 3.2 | Sharpness | [3.2.lean](Numbered/3.2.lean) | [`Sharpness.lean`](SharpRadialClipping/Sharpness.lean), [`StochasticSharpP1.lean`](SharpRadialClipping/StochasticSharpP1.lean) |
 | 3.3 | Conditional envelope | [3.3.lean](Numbered/3.3.lean) | [`ConditionalExtended.lean`](SharpRadialClipping/ConditionalExtended.lean), [`StochasticConditionalP1.lean`](SharpRadialClipping/StochasticConditionalP1.lean) |
 | 4.1 | Exact attainable set | [4.1.lean](Numbered/4.1.lean) | [`Article41.lean`](SharpRadialClipping/Article41.lean) |
-| 4.2 | Pointwise arc lemma | [4.2.lean](Numbered/4.2.lean) | [`PointwiseArc.lean`](SharpRadialClipping/PointwiseArc.lean) |
+| 4.2 | Remark: exact attainable set at `p = 1` | [4.2.lean](Numbered/4.2.lean) | [`AttainableP1.lean`](SharpRadialClipping/AttainableP1.lean) |
 | 4.3 | Signed support function | [4.3.lean](Numbered/4.3.lean) | [`SignedSupport.lean`](SharpRadialClipping/SignedSupport.lean), [`SignedSupportP1.lean`](SharpRadialClipping/SignedSupportP1.lean) |
 | 4.4 | Two-atom realization | [4.4.lean](Numbered/4.4.lean) | [`TwoAtom.lean`](SharpRadialClipping/TwoAtom.lean) |
 | 4.5 | All-threshold 3D realization | [4.5.lean](Numbered/4.5.lean) | [`AllThresholdsFinalPrep.lean`](SharpRadialClipping/AllThresholdsFinalPrep.lean) and its imported modules |
@@ -31,6 +31,8 @@ and shared lemmas are in [`SharpRadialClipping`](SharpRadialClipping).
 Some results require more than one source module because the endpoint `p = 1`
 is proved separately, or because substantial common lemmas are shared. The
 numbered files are entry points, **not independent one-file reproofs**.
+The unnumbered pointwise arc lemma used in the proof of Theorem 4.1 is proved
+in [`PointwiseArc.lean`](SharpRadialClipping/PointwiseArc.lean).
 For Proposition 3.2 with `1 < p ≤ 2`, the bound for every admissible law and
 the matching supremum already on centered two-point laws together prove the
 claimed global sharp constant; both facts are exposed in `Numbered/3.2.lean`.
